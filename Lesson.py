@@ -1,3 +1,6 @@
+# Pythonの基礎
+
+## 変数
 print('\n\n=== Program Start ===\n\n')
 num = 1
 name  = 'Myke'

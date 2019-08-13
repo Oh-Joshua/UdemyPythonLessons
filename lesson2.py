@@ -38,3 +38,23 @@ line3\
 """)
 print("#################")
 
+# 同じ文字を３回出力することができる
+print('Hi.' * 3)
+
+str = 'Hi.' * 5
+print(str)
+                        # 文字列を掛け算することもできる
+str = str + 'Yoshu'
+print(str)
+                        # 文字列を足すこともできる
+
+str2 = 'Py' 'thon'
+print(str2)
+                        # 文字列の結合は、並べるだけでもよい
+str2 = ('Py' 'thon')
+print(str2)
+                        # かっこで括ろと見やすい
+str2 = ('Py'
+        'thon')
+print(str2)
+                        # かっこで括ろと複数行に分かれて結合できる
