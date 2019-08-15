@@ -179,3 +179,50 @@ print(Y)
 # XとYは同じobjectになっている
 print(id(X))
 print(id(Y))
+
+# 20.リストの使いどころ
+# 簡単なゲームを作る。タクシーの座席に５人乗れるかどうかを評価する
+print('===================================')
+seat = []           # シートを空の配列で用意する
+min = 0             # 乗客の最少人数=0
+max = 5             # 乗客の定員=5
+CanRide = min <= len(seat) < max
+                    # 乗れるか判定(0~5)
+print('-----------------------------------')
+print(CanRide)
+seat.append('P')    # 一人乗せる(文字Personの'P')
+                    # (配列に追加)
+CanRide = min <= len(seat) < max
+                    # 乗れるかどうか判定
+print('-----------------------------------')
+print(CanRide)      # 判定結果を出力する
+seat.append('P')    # もう一人乗せる
+CanRide = min <= len(seat) < max
+print('-----------------------------------')
+print(CanRide)
+seat.append('P')
+CanRide = min <= len(seat) < max
+print('-----------------------------------')
+print(CanRide)
+seat.append('P')
+CanRide = min <= len(seat) < max
+print('-----------------------------------')
+print(CanRide)
+seat.append('P')
+CanRide = min <= len(seat) < max
+print('-----------------------------------')
+print(CanRide)
+print(len(seat))
+seat.pop(0)         # 一人降ろす(popで配列を減らす)
+CanRide = min <= len(seat) < max
+print('-----------------------------------')
+print(CanRide)
+seat.pop(0)
+CanRide = min <= len(seat) < max
+print('-----------------------------------')
+print(CanRide)
+seat.pop(0)
+CanRide = min <= len(seat) < max
+print('-----------------------------------')
+print(CanRide)
+print(seat)
